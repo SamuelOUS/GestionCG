@@ -8,7 +8,7 @@ templates = Jinja2Templates(directory=".")
 
 @app.get("/", response_class=HTMLResponse)
 async def read_root(request: Request):
-    return templates.TemplateResponse("index.html", {
+    return templates.TemplateResponse("main.py", {
         "request": request,
         "message": "¡Hola, una página WEB que interactúa con backend usando FastAPI con HTML!",
         "X": [1, 2, 3, 4, 5, 6, 7, 8]
