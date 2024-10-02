@@ -1,17 +1,40 @@
-
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Página de FastAPI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #fff;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
-
 <body>
-    <h2>Hola mundo</h2>
-    <h2>Samuel Osorio</h2>
-    {{message}}
+    <h1>{{ message }}</h1>
+    <h2>Números de la lista:</h2>
+    <ul>
+        {% for item in X %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
 </body>
-
 </html>
